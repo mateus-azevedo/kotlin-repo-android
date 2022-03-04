@@ -1,5 +1,6 @@
 package com.example.diceroller
 
+import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -9,6 +10,11 @@ import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
+    // lateinit - possibilita inicializar uma variavel/propriedade depois de sua declaracao
+    // so pode ser utilizado por variaveis mutaveis (var), deve ser diferente de nao nulo e
+    // primitivo
+    lateinit var diceImage: ImageView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -16,6 +22,8 @@ class MainActivity : AppCompatActivity() {
         rollButton.setOnClickListener {
             rollDice()
         }
+
+        diceImage = findViewById(R.id.dice_image)
     }
 
     private fun rollDice() {
@@ -28,7 +36,6 @@ class MainActivity : AppCompatActivity() {
             5 -> R.drawable.dice_5
             else -> R.drawable.dice_6
         }
-        val diceImage: ImageView = findViewById(R.id.dice_image)
 
         diceImage.setImageResource(drawableResource)
     }
