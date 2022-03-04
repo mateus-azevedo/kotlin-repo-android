@@ -12,7 +12,7 @@
         <entry key="app/src/main/res/drawable/dice_6.xml" value="0.22239583333333332" />
         <entry key="app/src/main/res/drawable/empty_dice.xml" value="0.22239583333333332" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.22239583333333332" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1717325227963526" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
       </map>
     </option>
   </component>
